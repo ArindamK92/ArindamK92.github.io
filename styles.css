@@ -252,10 +252,8 @@ h1 {
 }
 
 .profile-card,
-.notice,
 .banner,
 .info-card,
-.student-card,
 .publication,
 .info-panel,
 .contact {
@@ -283,10 +281,7 @@ h1 {
 
 .profile-role,
 .profile-copy,
-.notice p,
 .banner p,
-.student-card p,
-.student-card li,
 .info-card p,
 .publication p,
 .info-panel p,
@@ -317,12 +312,6 @@ h1 {
   font-size: 0.8rem;
 }
 
-.notice {
-  padding: 1.2rem 1.3rem;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(255, 255, 255, 0.96));
-}
-
-.notice-title,
 .banner-title {
   margin: 0 0 0.45rem;
   font-size: 0.85rem;
@@ -353,6 +342,10 @@ h1 {
   align-items: start;
 }
 
+.section-heading {
+  margin-bottom: 1.25rem;
+}
+
 .section-heading h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   max-width: 15ch;
@@ -381,37 +374,10 @@ h1 {
 }
 
 .info-card h3,
-.student-card h3,
 .publication h3,
 .info-panel h3 {
   font-size: 1.18rem;
   margin-bottom: 0.6rem;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.2fr);
-  gap: 1.5rem;
-  align-items: start;
-}
-
-.student-card {
-  padding: 1.3rem 1.35rem;
-}
-
-.student-card ul {
-  margin: 1rem 0;
-  padding-left: 1.1rem;
-  color: var(--muted);
-}
-
-.student-card li + li {
-  margin-top: 0.55rem;
-}
-
-.student-note {
-  color: var(--muted-strong);
-  margin-bottom: 0;
 }
 
 .publication-list {
@@ -533,7 +499,6 @@ h1 {
 @media (max-width: 1060px) {
   .hero,
   .content-grid,
-  .split,
   .two-column,
   .contact,
   .banner {
