@@ -469,10 +469,22 @@ h1 {
 .contact {
   margin-top: 2rem;
   padding: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
   gap: 1.25rem;
+}
+
+.contact h2 {
+  font-size: 1.9rem;
+  white-space: nowrap;
+}
+
+.contact-actions {
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+}
+
+.contact-actions .button {
+  white-space: nowrap;
 }
 
 .site-footer {
@@ -536,6 +548,10 @@ h1 {
   .banner {
     display: grid;
   }
+
+  .contact {
+    display: block;
+  }
 }
 
 @media (max-width: 700px) {
@@ -563,6 +579,14 @@ h1 {
   .card-grid,
   .publication-columns {
     grid-template-columns: 1fr;
+  }
+
+  .contact h2 {
+    white-space: normal;
+  }
+
+  .contact-actions {
+    flex-wrap: wrap;
   }
 
   .site-footer {
