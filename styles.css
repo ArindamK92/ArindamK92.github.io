@@ -255,7 +255,6 @@ h1 {
 .banner,
 .info-card,
 .publication,
-.info-panel,
 .contact {
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
@@ -284,7 +283,6 @@ h1 {
 .banner p,
 .info-card p,
 .publication p,
-.info-panel p,
 .contact p {
   color: var(--muted);
 }
@@ -368,14 +366,12 @@ h1 {
   gap: 1rem;
 }
 
-.info-card,
-.info-panel {
+.info-card {
   padding: 1.2rem 1.2rem 1.35rem;
 }
 
 .info-card h3,
-.publication h3,
-.info-panel h3 {
+.publication h3 {
   font-size: 1.18rem;
   margin-bottom: 0.6rem;
 }
@@ -444,10 +440,21 @@ h1 {
   margin: 0;
 }
 
-.two-column {
+.feature-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-list li {
+  padding: 0.95rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--muted-strong);
+  box-shadow: var(--shadow);
 }
 
 .contact {
@@ -499,7 +506,6 @@ h1 {
 @media (max-width: 1060px) {
   .hero,
   .content-grid,
-  .two-column,
   .contact,
   .banner {
     grid-template-columns: 1fr;
@@ -546,7 +552,6 @@ h1 {
   }
 
   .card-grid,
-  .two-column,
   .publication-columns {
     grid-template-columns: 1fr;
   }
