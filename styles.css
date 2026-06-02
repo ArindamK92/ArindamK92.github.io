@@ -161,6 +161,14 @@ main {
   padding: 3rem 0 1.5rem;
 }
 
+.profile-hero {
+  padding: 3rem 0 1rem;
+}
+
+.profile-hero h1 {
+  max-width: none;
+}
+
 .hero-copy,
 .hero-panel,
 .banner,
@@ -446,6 +454,16 @@ h1 {
   background: rgba(255, 255, 255, 0.94);
   color: var(--muted-strong);
   box-shadow: var(--shadow);
+}
+
+.feature-list strong,
+.feature-list span {
+  display: block;
+}
+
+.feature-list span {
+  margin-top: 0.2rem;
+  color: var(--muted);
 }
 
 .contact {
