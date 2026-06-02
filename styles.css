@@ -1,17 +1,14 @@
 :root {
-  color-scheme: dark;
-  --bg: #07111f;
-  --bg-soft: rgba(10, 19, 35, 0.78);
-  --panel: rgba(11, 23, 40, 0.72);
-  --panel-strong: rgba(16, 30, 52, 0.92);
-  --text: #f3f4f8;
-  --muted: #b7c0d6;
-  --muted-strong: #d4dcf0;
-  --line: rgba(196, 211, 240, 0.14);
-  --accent: #f2a65a;
-  --accent-2: #5ee0c2;
-  --accent-3: #8cb4ff;
-  --shadow: 0 24px 90px rgba(0, 0, 0, 0.35);
+  color-scheme: light;
+  --bg: #f7f5ef;
+  --text: #172033;
+  --muted: #5c6879;
+  --muted-strong: #344155;
+  --line: rgba(35, 52, 74, 0.12);
+  --accent: #b56a2f;
+  --accent-2: #127b70;
+  --accent-soft: rgba(181, 106, 47, 0.12);
+  --shadow: 0 22px 70px rgba(30, 41, 59, 0.1);
   --radius-xl: 30px;
   --radius-lg: 22px;
   --radius-md: 16px;
@@ -30,9 +27,9 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(95, 114, 255, 0.22), transparent 32%),
-    radial-gradient(circle at right 20%, rgba(94, 224, 194, 0.12), transparent 26%),
-    linear-gradient(180deg, #05101d 0%, #081522 40%, #0b1320 100%);
+    radial-gradient(circle at top left, rgba(238, 212, 190, 0.55), transparent 32%),
+    radial-gradient(circle at right 20%, rgba(167, 219, 210, 0.38), transparent 26%),
+    linear-gradient(180deg, #fbfaf7 0%, #f4f2ed 46%, #eef2f5 100%);
   color: var(--text);
   font-family: "Aptos", "Avenir Next", "Segoe UI", sans-serif;
   line-height: 1.6;
@@ -58,7 +55,7 @@ a {
   height: 22rem;
   top: -6rem;
   right: -4rem;
-  background: rgba(242, 166, 90, 0.18);
+  background: rgba(181, 106, 47, 0.16);
 }
 
 .ambient-2 {
@@ -66,7 +63,7 @@ a {
   height: 18rem;
   bottom: 8rem;
   left: -5rem;
-  background: rgba(94, 224, 194, 0.16);
+  background: rgba(18, 123, 112, 0.14);
 }
 
 .ambient-3 {
@@ -74,7 +71,7 @@ a {
   height: 14rem;
   top: 36rem;
   right: 18%;
-  background: rgba(140, 180, 255, 0.12);
+  background: rgba(79, 107, 181, 0.12);
 }
 
 .site-header,
@@ -106,11 +103,11 @@ main,
   border-radius: 1rem;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, rgba(242, 166, 90, 0.95), rgba(94, 224, 194, 0.9));
-  color: #07111f;
+  background: linear-gradient(135deg, rgba(181, 106, 47, 0.96), rgba(18, 123, 112, 0.9));
+  color: #ffffff;
   font-weight: 800;
   letter-spacing: 0.08em;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 12px 30px rgba(30, 41, 59, 0.14);
 }
 
 .brand-text {
@@ -138,7 +135,7 @@ main,
 }
 
 .nav a {
-  color: var(--muted);
+  color: var(--muted-strong);
   padding: 0.6rem 0.85rem;
   border-radius: 999px;
   transition: background 180ms ease, color 180ms ease, transform 180ms ease;
@@ -146,7 +143,7 @@ main,
 
 .nav a:hover {
   color: var(--text);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(18, 123, 112, 0.08);
   transform: translateY(-1px);
 }
 
@@ -219,7 +216,7 @@ h1 {
   padding: 0.8rem 1.15rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--text);
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
   backdrop-filter: blur(12px);
@@ -227,19 +224,19 @@ h1 {
 
 .button:hover {
   transform: translateY(-2px);
-  border-color: rgba(242, 166, 90, 0.45);
-  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(181, 106, 47, 0.35);
+  background: rgba(255, 255, 255, 1);
 }
 
 .button.primary {
-  background: linear-gradient(135deg, rgba(242, 166, 90, 0.98), rgba(94, 224, 194, 0.9));
-  color: #06111d;
+  background: linear-gradient(135deg, rgba(181, 106, 47, 0.98), rgba(18, 123, 112, 0.94));
+  color: #ffffff;
   border-color: transparent;
   font-weight: 700;
 }
 
 .button.secondary {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.94);
 }
 
 .hero-metrics {
@@ -253,7 +250,7 @@ h1 {
   padding: 1rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
 }
 
@@ -287,7 +284,7 @@ h1 {
 .contact {
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
-  background: linear-gradient(180deg, rgba(18, 30, 52, 0.86), rgba(8, 16, 31, 0.9));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 244, 239, 0.98));
   box-shadow: var(--shadow);
   backdrop-filter: blur(18px);
 }
@@ -302,9 +299,9 @@ h1 {
   object-fit: cover;
   object-position: center top;
   border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(35, 52, 74, 0.12);
   margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .profile-role,
@@ -346,14 +343,14 @@ h1 {
   min-height: 2rem;
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.07);
-  color: var(--muted-strong);
+  background: rgba(18, 123, 112, 0.08);
+  color: var(--accent-2);
   font-size: 0.8rem;
 }
 
 .notice {
   padding: 1.2rem 1.3rem;
-  background: linear-gradient(135deg, rgba(242, 166, 90, 0.17), rgba(11, 23, 40, 0.92));
+  background: linear-gradient(135deg, rgba(181, 106, 47, 0.12), rgba(255, 255, 255, 0.96));
 }
 
 .notice-title,
@@ -396,7 +393,7 @@ h1 {
   padding: 1.2rem 1.35rem;
   border-radius: var(--radius-xl);
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.94);
 }
 
 .prose p:first-child {
@@ -495,7 +492,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  border-top: 1px solid rgba(196, 211, 240, 0.08);
+  border-top: 1px solid rgba(35, 52, 74, 0.08);
 }
 
 .site-footer p {
