@@ -200,6 +200,12 @@ h1 {
   font-size: 1.08rem;
 }
 
+.secondary-lede {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
 .hero-actions,
 .contact-actions {
   display: flex;
@@ -237,12 +243,6 @@ h1 {
 
 .button.secondary {
   background: rgba(255, 255, 255, 0.94);
-}
-
-.hero-note {
-  margin: 1.4rem 0 0;
-  color: var(--muted);
-  font-weight: 700;
 }
 
 .hero-panel {
