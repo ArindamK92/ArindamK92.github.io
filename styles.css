@@ -487,6 +487,34 @@ h1 {
   white-space: nowrap;
 }
 
+.photo-gallery {
+  column-count: 3;
+  column-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.photo-gallery figure {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow);
+}
+
+.photo-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 260ms ease;
+}
+
+.photo-gallery figure:hover img {
+  transform: scale(1.025);
+}
+
 .site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -581,6 +609,10 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .photo-gallery {
+    column-count: 2;
+  }
+
   .contact h2 {
     white-space: normal;
   }
@@ -591,5 +623,11 @@ h1 {
 
   .site-footer {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .photo-gallery {
+    column-count: 1;
   }
 }
