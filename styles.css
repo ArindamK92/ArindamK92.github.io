@@ -450,6 +450,22 @@ h1 {
   gap: 0.9rem;
 }
 
+.publication-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.subsection-title {
+  margin: 0 0 0.9rem;
+  font-family: "Aptos", "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--muted-strong);
+  letter-spacing: 0.02em;
+}
+
 .publication {
   padding: 1rem 1.15rem;
 }
@@ -467,6 +483,30 @@ h1 {
 .publication-footnote {
   margin-top: 1rem;
   color: var(--muted);
+}
+
+.timeline {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.timeline-item {
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow);
+}
+
+.timeline-date {
+  margin: 0 0 0.35rem;
+  color: var(--accent-2);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.timeline-item p:last-child {
+  margin: 0;
 }
 
 .two-column {
@@ -539,6 +579,10 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .publication-columns {
+    grid-template-columns: 1fr;
+  }
+
   .contact,
   .banner {
     display: grid;
@@ -569,7 +613,8 @@ h1 {
 
   .hero-metrics,
   .card-grid,
-  .two-column {
+  .two-column,
+  .publication-columns {
     grid-template-columns: 1fr;
   }
 
