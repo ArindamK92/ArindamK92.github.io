@@ -1374,3 +1374,13 @@ body {
     width: min(62vw, 220px);
   }
 }
+
+:root {
+  --max-width: 1480px;
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: var(--max-width);
+}
